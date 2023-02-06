@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  web:
+    entrypoint: /entrypoint.sh
+    build: ./
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+    - .:/usr/src/Gallery/
+    ports:
+    - 8000:8000

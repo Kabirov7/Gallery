@@ -1,0 +1,12 @@
+# Base
+*.sqlite3
+.DS_Store
+.idea
+__pycache__
+
+# Ignore migrations
+**/migrations/*
+!**/migrations/__init__.py
+
+# Media
+media/*
